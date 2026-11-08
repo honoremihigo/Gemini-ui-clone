@@ -8,7 +8,7 @@ function App() {
   return (
     <div className=' text-gray-200 flex  transition-all ' >
       <Sidebar setIsSidebarCollapsed={setIsSidebarCollapsed} isSidebarCollapsed={isSidebarCollapsed} />
-      <div className={`bg-black h-lvh bg-radial from-blue-500/35 ${ isSidebarCollapsed ?'w-full' :`w-4/5`}  to-black`}>
+      <div className={`bg-black h-lvh bg-radial from-blue-500/35 ${ isSidebarCollapsed ?'w-full' :`w-4/5`} transition-all duration-200  to-black`}>
         <Navbar />
         <MainContent/>
       </div>
